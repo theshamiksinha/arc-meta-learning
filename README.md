@@ -4,6 +4,16 @@
 
 Given 2–4 input/output sequence pairs, infer the transformation rule and apply it to a new input — treated as a meta-learning problem across 901 tasks and 18 concept classes (recolor, flip, move, fill, denoise, mirror...).
 
+Dataset: [khalil-research/1D-ARC](https://github.com/khalil-research/1D-ARC)
+
+---
+
+## Dataset
+
+Each row below shows an input→output pair for a concept class. The model sees 2–4 such pairs as a support set and must predict the output for a new input.
+
+![Concept examples](assets/concept_examples.png)
+
 ---
 
 ## Models
@@ -16,6 +26,10 @@ Given 2–4 input/output sequence pairs, infer the transformation rule and apply
 | **PosCNP** | MAML | Multi-head cross-attention from query onto support — preserves positional structure |
 
 All MAML models run 20 gradient steps on the support set at test time before predicting.
+
+### PosCNP Architecture
+
+![PosCNP architecture](assets/architecture.png)
 
 ---
 
