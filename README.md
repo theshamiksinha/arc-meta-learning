@@ -1,6 +1,8 @@
 # 1D-ARC: Few-Shot Sequence Transformation
 
 > Built as part of the Meta-Learning course at IIIT Delhi.
+>
+> **[Slide deck here](presentation.pdf) — recommended starting point for a quick overview.**
 
 Given 2-4 input/output sequence pairs, infer the transformation rule and apply it to a new input, treated as a meta-learning problem across 901 tasks and 18 concept classes (recolor, flip, move, fill, denoise, mirror...).
 
